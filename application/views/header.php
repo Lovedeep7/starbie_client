@@ -326,14 +326,6 @@
 								<a class="dropdown-item" href="<?php echo base_url();?>ci_assets/payment.html">Payment Page</a>
 							</div>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contact Us</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-	</div>
-	<!-- //navigation -->
+					
 
 	
