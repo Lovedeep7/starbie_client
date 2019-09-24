@@ -14,12 +14,16 @@
 	<link href="<?php echo base_url();?>ci_assets/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- pop-up-box -->
 	<link href="<?php echo base_url();?>ci_assets/css/menu.css" rel="stylesheet" type="text/css" media="all" />
-
+	<!-- menu style -->
+	<!-- //Custom-Files -->
+	<!-- web fonts -->
 	<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-	
+	<!-- //web fonts -->
+
 </head>
 <body>
+	<!-- top-header -->
 	<div class="agile-main-top">
 		<div class="container-fluid">
 			<div class="row main-top-w3l py-2">
@@ -29,37 +33,36 @@
 					</p>
 				</div>
 				<div class="col-lg-8 header-right mt-lg-0 mt-2">
+					<!-- header lists -->
 					<ul>
+						
 						<li class="text-center border-right text-white">
 							<a class="play-icon popup-with-zoom-anim text-white" href="#small-dialog1">
 								<i class="fas fa-map-marker mr-2"></i>Select Location</a>
 						</li>
-						
+						<li class="text-center border-right text-white">
+							<a href="#" data-toggle="modal" data-target="#exampleModal" class="text-white">
+								<i class="fas fa-truck mr-2"></i>Track Order</a>
+						</li>
 						<li class="text-center border-right text-white">
 							<i class="fas fa-phone mr-2"></i> Contact Number
 						</li>
-						<?php if($this->session->userdata('user_firstname')) { ?>
 						<li class="text-center border-right text-white">
-							<a href="<?php echo base_url();?>Ecom/logout" class="text-white">
-								<i class="fas fa-sign-in-alt mr-2"></i> Logout </a>
-						</li>
-						<?php } else { ?>
-							<li class="text-center border-right text-white">
 							<a href="#" data-toggle="modal" data-target="#exampleModal" class="text-white">
 								<i class="fas fa-sign-in-alt mr-2"></i> Log In </a>
 						</li>
-						<?php } ?>
 						<li class="text-center text-white">
 							<a href="#" data-toggle="modal" data-target="#exampleModal2" class="text-white">
 								<i class="fas fa-sign-out-alt mr-2"></i>Register </a>
 						</li>
 					</ul>
-			
+					<!-- //header lists -->
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<!-- Button trigger modal(select-location) -->
 	<div id="small-dialog1" class="mfp-hide">
 		<div class="select-city">
 			<h3>
@@ -79,14 +82,14 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<form action="<?php echo base_url();?>Ecom/LoginUser" method="post">
+					<form action="#" method="post">
 						<div class="form-group">
 							<label class="col-form-label">Email</label>
-							<input type="email" class="form-control" placeholder=" " name="user_email" required="">
+							<input type="email" class="form-control" placeholder=" " name="Name" required="">
 						</div>
 						<div class="form-group">
 							<label class="col-form-label">Password</label>
-							<input type="password" class="form-control" placeholder=" " name="user_password" required="">
+							<input type="password" class="form-control" placeholder=" " name="Password" required="">
 						</div>
 						<div class="right-w3l">
 							<input type="submit" class="form-control" value="Log in">
@@ -127,10 +130,6 @@
 							<input type="text" class="form-control" placeholder=" " name="first_name" required="">
 						</div>
 						<div class="form-group">
-							<label class="col-form-label">Middle Name</label>
-							<input type="text" class="form-control" placeholder=" " name="middle_name" required="">
-						</div>
-						<div class="form-group">
 							<label class="col-form-label">Last Name</label>
 							<input type="text" class="form-control" placeholder=" " name="last_name" required="">
 						</div>
@@ -142,7 +141,10 @@
 							</select>
 					
 						</div>
-							
+							<div class="form-group">
+							<label class="col-form-label">Contact Number</label>
+							<input type="text" class="form-control" placeholder=" " name="contact_number" id="password1" required="">
+						</div>	
 						<div class="form-group">
 							<label class="col-form-label">Address</label>
 							<input type="text" class="form-control" placeholder=" " name="address" id="password1" required="">
@@ -175,7 +177,10 @@
 			</div>
 		</div>
 	</div>
-	
+	<!-- //modal -->
+	<!-- //top-header -->
+
+	<!-- header-bottom-->
 	<div class="header-bot">
 		<div class="container">
 			<div class="row header-bot_inner_wthreeinfo_header_mid">
@@ -187,7 +192,8 @@
 						</a>
 					</h1>
 				</div>
-				
+				<!-- //logo -->
+				<!-- header-bot -->
 				<div class="col-md-9 header mt-4 mb-md-0 mb-4">
 					<div class="row">
 						<!-- search -->
@@ -198,6 +204,8 @@
 							</form>
 						</div>
 						
+						<!-- //search -->
+						<!-- cart details -->
 						<div class="col-2 top_nav_right text-center mt-sm-0 mt-2">
 							<div class="wthreecartaits wthreecartaits2 cart cart box_1">
 								<form action="#" method="post" class="last">
@@ -215,7 +223,9 @@
 			</div>
 		</div>
 	</div>
-	
+	<!-- shop locator (popup) -->
+	<!-- //header-bottom -->
+	<!-- navigation -->
 	<div class="navbar-inner">
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -224,15 +234,15 @@
 						<select id="agileinfo-nav_search" name="agileinfo_search" class="border" required="">
 							<option value="">All Categories</option>
 							<option value="catagory 1">catagory 1</option>
-							<option value="catagory 2">catagory 2</option>
-							<option value="catagory 3">catagory 3</option>
-							<option value="catagory 3">catagory 4</option>
-							<option value="catagory 3">catagory 5</option>
-							<option value="catagory 3">catagory 6</option>
-							<option value="catagory 3">catagory 7</option>
-							<option value="catagory 3">catagory 8</option>
-							<option value="catagory 3">catagory 9</option>
-						</select> 
+							<option value="catagory">catagory 2</option>
+							<option value="catagory">catagory 3</option>
+							<option value="catagory">catagory 4</option>
+							<option value="catagory">catagory 5</option>
+							<option value="catagory">catagory 6</option>
+							<option value="catagory">catagory 7</option>
+							<option value="catagory">catagory 8</option>
+							<option value="catagory">catagory 9</option>
+						</select>
 					</form>
 				</div>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -248,17 +258,48 @@
 						</li>
 						<li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
 							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Browse Products
+								Catagory 1
 							</a>
-							<div class="dropdown-menu" >
-								<div class="agile_inner_drop_nav_info p-4" style="min-width: 520px;">
-									<h5 class="mb-3">Catagory List</h5>
+							<div class="dropdown-menu">
+								<div class="agile_inner_drop_nav_info p-4">
+									<h5 class="mb-3">Catagory 1</h5>
 									<div class="row">
 										<div class="col-sm-6 multi-gd-img">
 											<ul class="multi-column-dropdown">
 												<li>
-													<a href="#">Product List</a>
+													<a href="#">list</a>
 												</li>
+												
+												</li>
+											</ul>
+										</div>
+										<div class="col-sm-6 multi-gd-img">
+											<ul class="multi-column-dropdown">
+												<li>
+													<a href="#">list 1</a>
+												</li>
+											
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Catagory2
+							</a>
+							<div class="dropdown-menu">
+								<div class="agile_inner_drop_nav_info p-4">
+									<h5 class="mb-3">Catagory 2</h5>
+									<div class="row">
+										<div class="col-sm-6 multi-gd-img">
+											
+										</div>
+										<div class="col-sm-6 multi-gd-img">
+											<ul class="multi-column-dropdown">
+												<li>
+													<a href="#">list 2</a>
 												</li>
 											</ul>
 										</div>
@@ -269,7 +310,9 @@
 						<li class="nav-item mr-lg-2 mb-lg-0 mb-2">
 							<a class="nav-link" href="#">About Us</a>
 						</li>
-					
+						<li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+							<a class="nav-link" href="#">Browse Products</a>
+						</li>
 						<li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
 							
 							<div class="dropdown-menu">
@@ -291,22 +334,6 @@
 			</nav>
 		</div>
 	</div>
-
-	<?php if($this->session->flashdata('success')) { ?>
-			<div class="alert alert-success alert-dismissible fade show" role="alert">
-		<strong><?php echo $this->session->userdata('user_firstname'); ?></strong> <?php echo $this->session->flashdata('success');?>
-		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		</button>
-		</div>
-<?php } else if($this->session->flashdata('failed')) { ?>
-	<div class="alert alert-danger alert-dismissible fade show" role="alert">
-		<strong>Failed</strong> <?php echo $this->session->flashdata('failed');?>
-		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-			
-		</button>
-		</div>
-<?php } ?>
 	<!-- //navigation -->
 
 	
