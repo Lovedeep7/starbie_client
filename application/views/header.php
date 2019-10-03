@@ -292,21 +292,5 @@
 		</div>
 	</div>
 
-	<?php if($this->session->flashdata('success')) { ?>
-			<div class="alert alert-success alert-dismissible fade show" role="alert">
-		<strong><?php echo $this->session->userdata('user_firstname'); ?></strong> <?php echo $this->session->flashdata('success');?>
-		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		</button>
-		</div>
-<?php } else if($this->session->flashdata('failed')) { ?>
-	<div class="alert alert-danger alert-dismissible fade show" role="alert">
-		<strong>Failed</strong> <?php echo $this->session->flashdata('failed');?>
-		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		</button>
-		</div>
-<?php } ?>
-	<!-- //navigation -->
-
+	
 	
