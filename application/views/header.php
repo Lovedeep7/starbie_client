@@ -13,11 +13,14 @@
 	<!-- Font-Awesome-Icons-CSS -->
 	<link href="<?php echo base_url();?>ci_assets/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- pop-up-box -->
+	<!--flexslider-->
+	<link rel="stylesheet" href="<?php echo base_url();?>ci_assets/css/easy-responsive-tabs.css">
+	<!--/flexslider-->
+	<link rel="stylesheet" href="<?php echo base_url();?>ci_assets/css/flexslider.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>ci_assets/css/creditly.css">
 	<link href="<?php echo base_url();?>ci_assets/css/menu.css" rel="stylesheet" type="text/css" media="all" />
-
 	<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-	
 </head>
 <body>
 	<div class="agile-main-top">
@@ -34,27 +37,33 @@
 							<a class="play-icon popup-with-zoom-anim text-white" href="#small-dialog1">
 								<i class="fas fa-map-marker mr-2"></i>Select Location</a>
 						</li>
-						
 						<li class="text-center border-right text-white">
 							<i class="fas fa-phone mr-2"></i> Contact Number
 						</li>
-						<?php if($this->session->userdata('user_firstname')) { ?>
+						<?php if($this->session->userdata('fname')) { ?>
 						<li class="text-center border-right text-white">
 							<a href="<?php echo base_url();?>Ecom/logout" class="text-white">
 								<i class="fas fa-sign-in-alt mr-2"></i> Logout </a>
+						</li>
+						<li class="text-center border-right text-white">
+							<a href="#" class="text-white">
+								<i class="fas fa-user mr-2"></i> Welcome!!  <?php echo $this->session->userdata('fname');?> </a>
 						</li>
 						<?php } else { ?>
 							<li class="text-center border-right text-white">
 							<a href="#" data-toggle="modal" data-target="#exampleModal" class="text-white">
 								<i class="fas fa-sign-in-alt mr-2"></i> Log In </a>
 						</li>
-						<?php } ?>
 						<li class="text-center text-white">
 							<a href="#" data-toggle="modal" data-target="#exampleModal2" class="text-white">
 								<i class="fas fa-sign-out-alt mr-2"></i>Register </a>
 						</li>
+						<li class="text-center text-white">
+							<a href="#" class="text-white">
+								<i class="fas fa-gift mr-2"></i>Offers </a>
+						</li>
+						<?php } ?>
 					</ul>
-			
 				</div>
 			</div>
 		</div>
@@ -120,7 +129,7 @@
 					<form action="<?php echo base_url();?>Ecom/addUser" method="post" enctype='multipart/form-data'>
 						<div class="form-group">
 							<label class="col-form-label">profile picture</label>
-							<input type="file" class="form-control" placeholder=" " name="file" id="password1" required="">
+							<input type="file" class="form-control" placeholder=" " name="file">
 						</div>
 						<div class="form-group">
 							<label class="col-form-label">First Name</label>
@@ -140,9 +149,7 @@
 								<option value="MALE">MALE</option>
 								<option value="MALE">FEMALE</option>
 							</select>
-					
 						</div>
-							
 						<div class="form-group">
 							<label class="col-form-label">Address</label>
 							<input type="text" class="form-control" placeholder=" " name="address" id="password1" required="">
@@ -175,16 +182,21 @@
 			</div>
 		</div>
 	</div>
-	
 	<div class="header-bot">
 		<div class="container">
 			<div class="row header-bot_inner_wthreeinfo_header_mid">
 				<!-- logo -->
 				<div class="col-md-3 logo_agile">
 					<h1 class="text-center">
+					<?php if($name){ ?>
+					<?php foreach($name as $row) { ?>
 						<a href="<?php echo base_url();?>" class="font-weight-bold font-italic">
-							<img src="<?php echo base_url();?>" alt=" " class="img-fluid">Starbie
+							<img src="<?php echo base_url(); ?>logos/<?php echo $row->logo; ?>" alt=" " style="margin-left: -60px;height: 61px;margin-top: 5px;">
 						</a>
+					<?php } ?>
+					<?php } else { ?>
+						<img src="<?php echo base_url(); ?>logos/starbie.png" alt=" " style="margin-left: -60px;height: 61px;margin-top: 5px;">
+					<?php } ?>
 					</h1>
 				</div>
 				
@@ -192,12 +204,11 @@
 					<div class="row">
 						<!-- search -->
 						<div class="col-10 agileits_search">
-							<form class="form-inline" action="#" method="post">
-								<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" required>
+							<form class="form-inline" action="<?php echo base_url();?>Ecom/org" method="post">
+								<input class="form-control mr-sm-2" type="search" name="name" placeholder="Search" aria-label="Search" required>
 								<button class="btn my-2 my-sm-0" type="submit">Search</button>
 							</form>
 						</div>
-						
 						<div class="col-2 top_nav_right text-center mt-sm-0 mt-2">
 							<div class="wthreecartaits wthreecartaits2 cart cart box_1">
 								<form action="#" method="post" class="last">
@@ -215,7 +226,6 @@
 			</div>
 		</div>
 	</div>
-	
 	<div class="navbar-inner">
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -241,7 +251,7 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto text-center mr-xl-5">
-						<li class="nav-item active mr-lg-2 mb-lg-0 mb-2">
+						<li class="nav-item  mr-lg-2 mb-lg-0 mb-2">
 							<a class="nav-link" href="<?php echo base_url();?>">Home
 								<span class="sr-only">(current)</span>
 							</a>
@@ -259,6 +269,21 @@
 												<li>
 													<a href="<?php echo base_url();?>Ecom/products">Mobiles & Computers</a>
 												</li>
+												<li>
+													<a href="<?php echo base_url();?>Ecom/cloths">Clothing</a>
+												</li>
+												<li>
+													<a href="<?php echo base_url();?>Ecom/products">TV, Audio & Large Appliances</a>
+												</li>
+												<li>
+													<a href="<?php echo base_url();?>Ecom/products">Mobile & Laptop Accessories</a>
+												</li>
+												<li>
+													<a href="<?php echo base_url();?>Ecom/products">Appliances </a>
+												</li>
+												<li>
+													<a href="#">Others</a>
+												</li>
 												</li>
 											</ul>
 										</div>
@@ -269,7 +294,7 @@
 						<li class="nav-item mr-lg-2 mb-lg-0 mb-2">
 							<a class="nav-link" href="<?php echo base_url();?>Ecom/aboutus">About Us</a>
 						</li>
-					
+						
 						<li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
 							
 							<div class="dropdown-menu">
@@ -286,11 +311,38 @@
 						<li class="nav-item">
 							<a class="nav-link" href="<?php echo base_url();?>Ecom/contactUs">Contact Us</a>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="">Brands</a>
+						</li>
+					
 					</ul>
 				</div>
 			</nav>
 		</div>
 	</div>
-
-	
-	
+	<?php if($this->session->flashdata('success')) { ?>
+			<div class="alert alert-success alert-dismissible fade show" role="alert">
+		<strong><?php echo $this->session->userdata('user_firstname'); ?></strong> <?php echo $this->session->flashdata('success');?>
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		</div>
+<?php } else if($this->session->flashdata('failed')) { ?>
+	<div class="alert alert-danger alert-dismissible fade show" role="alert">
+		<strong>Failed</strong> <?php echo $this->session->flashdata('failed');?>
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		</div>
+<?php } ?>
+	<!-- //navigation -->
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+    $(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('active'); $(this).parents('li').addClass('active');
+            }
+        });
+    });
+</script>
