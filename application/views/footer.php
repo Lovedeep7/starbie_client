@@ -217,17 +217,7 @@
 			});
 		});
 	</script>
-	<script>
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 1000);
-			});
-		});
-	</script>
+	
 	<!-- //end-smooth-scrolling -->
 
 	<!-- smooth-scrolling-of-move-up -->
