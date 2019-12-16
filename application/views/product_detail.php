@@ -90,9 +90,7 @@
 								Exynos 7870 Octa Core 1.6GHz Processor
 							</li>
 						</ul>
-						<p class="my-sm-4 my-3">
-							<i class="fas fa-retweet mr-3"></i>Net banking & Credit/ Debit/ ATM card
-						</p>
+						
 					</div>
 					<div class="occasion-cart">
 						<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
