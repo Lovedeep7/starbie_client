@@ -33,8 +33,4 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-sm-4 contact-grid agileinfo-6 my-sm-0 my-4">
-					<div class="contact-grid1 text-center">
-						<div class="con-ic">
-							<i class="fas fa-phone rounded-circle"></i>
-						</div>
+				
