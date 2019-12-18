@@ -16,9 +16,4 @@
 		</div>
 	</div>
 	
-				<div class="col-lg-6 welcome-right-top mt-lg-0 mt-sm-5 mt-4">
-					<img src="<?php echo base_url();?>ci_assets/images/ec1.png" class="img-fluid" alt=" " style="max-width: 130%;">
-				</div>
-			</div>
-		</div>
-	</div>
+				
