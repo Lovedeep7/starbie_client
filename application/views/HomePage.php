@@ -290,19 +290,9 @@
 										<div class="men-thumb-item text-center">
 											<img src="<?php echo base_url();?>ci_assets/images/m6.jpg" alt="">
 											<div class="men-cart-pro">
-												<div class="inner-men-cart-pro">
-													<a href="#" class="link-product-add-cart">Quick View</a>
-												</div>
-											</div>
-										</div>
-										<div class="item-info-product text-center border-top mt-4">
-											<h4 class="pt-1">
-												<a href="#">Philips Speakers</a>
-											</h4>
-											<div class="info-product-price my-2">
-												<span class="item_price">$249.00</span>
-												<del>$300.00</del>
-											</div>
+												<div class="inner-men-cart-pro"
+												     
+													<a href="#" class="link-product-a
 											<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
 												<form action="#" method="post">
 													<fieldset>
