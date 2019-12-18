@@ -23,15 +23,7 @@
 					<div class="col-md-3 col-sm-6 footer-grids mt-sm-0 mt-4">
 						<h3 class="text-white font-weight-bold mb-3">Quick Links</h3>
 						<ul>
-							<li class="mb-3">
-								<a href="#">About Us</a>
-							</li>
-							<li class="mb-3">
-								<a href="#">Contact Us</a>
-							</li>
-							<li class="mb-3">
-								<a href="#">Help</a>
-							</li>
+							
 							<li class="mb-3">
 								<a href="#">Faqs</a>
 							</li>
