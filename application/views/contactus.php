@@ -21,13 +21,8 @@
 				<span>U</span>s
 			</h3>
 			<!-- //tittle heading -->
-			<div class="row contact-grids agile-1 mb-5">
-				<div class="col-sm-4 contact-grid agileinfo-6 mt-sm-0 mt-2">
-					<div class="contact-grid1 text-center">
-						<div class="con-ic">
-							<i class="fas fa-map-marker-alt rounded-circle"></i>
-						</div>
-						<h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Address</h4>
+			
+			<h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Address</h4>
 						<p>Brisbane,
 							<label>Australia.</label>
 						</p>
