@@ -1,3 +1,61 @@
+							
+							
+							<footer>
+		<div class="footer-top-first">
+		<div class="row w3l-grids-footer border-top border-bottom py-sm-4 py-3">
+				</div>
+				<!-- //footer second section -->
+			</div>
+		</div>
+		<div class="agile-sometext py-md-5 py-sm-4 py-3">
+			<div class="container">
+				<!-- brands -->
+			
+				<!-- //brands -->
+				<!-- payment -->
+				<div class="sub-some child-momu mt-4">
+					<h5 class="font-weight-bold mb-3">Payment Method</h5>
+					<ul>
+						<li>
+							<img src="<?php echo base_url();?>ci_assets/images/pay2.png" alt="">
+						</li>
+						<li>
+							<img src="<?php echo base_url();?>ci_assets/images/pay5.png" alt="">
+						</li>
+						<li>
+							<img src="<?php echo base_url();?>ci_assets/images/pay1.png" alt="">
+						</li>
+						<li>
+							<img src="<?php echo base_url();?>ci_assets/images/pay4.png" alt="">
+						</li>
+						<li>
+							<img src="<?php echo base_url();?>ci_assets/images/pay6.png" alt="">
+						</li>
+						<li>
+							<img src="<?php echo base_url();?>ci_assets/images/pay3.png" alt="">
+						</li>
+						<li>
+							<img src="<?php echo base_url();?>ci_assets/images/pay7.png" alt="">
+						</li>
+						<li>
+							<img src="<?php echo base_url();?>ci_assets/images/pay8.png" alt="">
+						</li>
+						<li>
+							<img src="<?php echo base_url();?>ci_assets/images/pay9.png" alt="">
+						</li>
+					</ul>
+				</div>
+				<!-- //payment -->
+			</div>
+		</div>
+		<!-- footer third section -->
+		<div class="w3l-middlefooter-sec">
+			<div class="container py-md-5 py-sm-4 py-3">
+				<div class="row footer-info w3-agileits-info">
+					<!-- footer categories -->
+					<div class="col-md-3 col-sm-6 footer-grids">
+						<h3 class="text-white font-weight-bold mb-3">Categories</h3>
+						<ul>
 							<li class="mb-3">
 								<a href="#">Mobiles </a>
 							</li>
@@ -23,7 +81,15 @@
 					<div class="col-md-3 col-sm-6 footer-grids mt-sm-0 mt-4">
 						<h3 class="text-white font-weight-bold mb-3">Quick Links</h3>
 						<ul>
-							
+							<li class="mb-3">
+								<a href="#">About Us</a>
+							</li>
+							<li class="mb-3">
+								<a href="#">Contact Us</a>
+							</li>
+							<li class="mb-3">
+								<a href="#">Help</a>
+							</li>
 							<li class="mb-3">
 								<a href="#">Faqs</a>
 							</li>
@@ -172,7 +238,22 @@
 	<!-- //cart-js -->
 
 	<!-- password-script -->
-	
+	<script>
+		window.onload = function () {
+			document.getElementById("password1").onchange = validatePassword;
+			document.getElementById("password2").onchange = validatePassword;
+		}
+
+		function validatePassword() {
+			var pass2 = document.getElementById("password2").value;
+			var pass1 = document.getElementById("password1").value;
+			if (pass1 != pass2)
+				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+			else
+				document.getElementById("password2").setCustomValidity('');
+			//empty string means no validation error
+		}
+	</script>
 	<!-- //password-script -->
 
 	<!-- smoothscroll -->
@@ -194,7 +275,17 @@
 			});
 		});
 	</script>
-	
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
 	<!-- //end-smooth-scrolling -->
 
 	<!-- smooth-scrolling-of-move-up -->
