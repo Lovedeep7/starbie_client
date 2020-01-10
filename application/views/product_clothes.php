@@ -158,7 +158,9 @@
 										<div class="men-thumb-item text-center">
 											<img src="" alt="Image coming soon">
 											<div class="men-cart-pro">
-											
+												<div class="inner-men-cart-pro">
+													<a href="#" class="link-product-add-cart">Quick View</a>
+												</div>
 											</div>
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
@@ -512,4 +514,4 @@
 					</div>
 				</div>
 			</div>
-	
+			
