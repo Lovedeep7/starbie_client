@@ -8,22 +8,7 @@
 			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 			<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
 		</ol>
-		<div class="carousel-inner">
-			<div class="carousel-item item1 active">
-				<div class="container">
-					<div class="w3l-space-banner">
-						<div class="carousel-caption p-lg-5 p-sm-4 p-3">
-							<p>A fresh approach to shopping
-								<span>Ad 1</span>
-							<h3 class="font-weight-bold pt-2 pb-lg-5 pb-4">
-								<span>Big</span>
-								Sale
-							</h3>
-							<a class="button2" href="<?php echo base_url();?>Ecom/product_detail">Visit Ad </a>
-						</div>
-					</div>
-				</div>
-			</div>
+		
 			<div class="carousel-item item2">
 				<div class="container">
 					<div class="w3l-space-banner">
