@@ -1,4 +1,5 @@
-<div class="page-head_agile_info_w3l">
+
+		<div class="page-head_agile_info_w3l">
 
 	</div>
 	<!-- //banner-2 -->
@@ -24,7 +25,12 @@
 		</button>
 		</div>
 <?php } else if($this->session->flashdata('failed')) { ?>
-	
+	<div class="alert alert-danger alert-dismissible fade show" role="alert">
+		<strong>Failed</strong> <?php echo $this->session->flashdata('failed');?>
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		</div>
 <?php } ?>
 <div class="contact py-sm-5 py-4">
 		<div class="container py-xl-4 py-lg-2">
