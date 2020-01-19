@@ -1,5 +1,4 @@
 							
-							
 							<footer>
 		<div class="footer-top-first">
 		<div class="row w3l-grids-footer border-top border-bottom py-sm-4 py-3">
@@ -10,7 +9,6 @@
 		<div class="agile-sometext py-md-5 py-sm-4 py-3">
 			<div class="container">
 				<!-- brands -->
-			
 				<!-- //brands -->
 				<!-- payment -->
 				<div class="sub-some child-momu mt-4">
@@ -94,7 +92,7 @@
 								<a href="#">Faqs</a>
 							</li>
 							<li class="mb-3">
-								<a href="#">Terms of use</a>
+								<a href="<?php echo base_url(); ?>Ecom/terms">Terms of use</a>
 							</li>
 							<li>
 								<a href="#">Privacy Policy</a>
@@ -147,17 +145,12 @@
 						</div>
 						<!-- //social icons -->
 					</div>
-				</div>
+		</div>
 				<!-- //quick links -->
 			</div>
 		</div>
-
-				
 		</div>
-		
-
 	</footer>
-
 	<footer>
 	<div class="copy-right py-3">
 		<div class="container">
@@ -167,13 +160,10 @@
 			
 		</div>
 	</div>
-
 	<script src="<?php echo base_url();?>ci_assets/js/jquery-2.2.3.min.js"></script>
 	<script src="<?php echo base_url();?>ci_assets/js/bootstrap.js"></script>
 	<script src="<?php echo base_url();?>ci_assets/js/creditly.js"></script>
 	<script src="<?php echo base_url();?>ci_assets/js/creditly2.js"></script>
-	
-
 	<!-- //jquery -->
 
 	<!-- nav smooth scroll -->
@@ -208,7 +198,6 @@
 				removalDelay: 300,
 				mainClass: 'my-mfp-zoom-in'
 			});
-
 		});
 	</script>
 	<!-- //popup modal (for location)-->
@@ -223,7 +212,6 @@
 				len = items.length,
 				total = 0,
 				i;
-
 			// Count the number of each item in the cart
 			for (i = 0; i < len; i++) {
 				total += items[i].get('quantity');
