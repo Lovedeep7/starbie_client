@@ -24,7 +24,18 @@
 					</div>
 				</div>
 			</div>
-			
+			<div class="carousel-item item2">
+				<div class="container">
+					<div class="w3l-space-banner">
+						<div class="carousel-caption p-lg-5 p-sm-4 p-3">
+							<p>Buy, Think, Grow
+								<span>Ad 2</span>
+							<h3 class="font-weight-bold pt-2 pb-lg-5 pb-4">
+								<span>Big</span>
+								Sale
+							</h3>
+							<a class="button2" href="<?php echo base_url();?>Ecom/product_detail">Visit Ad </a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -290,9 +301,19 @@
 										<div class="men-thumb-item text-center">
 											<img src="<?php echo base_url();?>ci_assets/images/m6.jpg" alt="">
 											<div class="men-cart-pro">
-												<div class="inner-men-cart-pro"
-												     
-													<a href="#" class="link-product-a
+												<div class="inner-men-cart-pro">
+													<a href="#" class="link-product-add-cart">Quick View</a>
+												</div>
+											</div>
+										</div>
+										<div class="item-info-product text-center border-top mt-4">
+											<h4 class="pt-1">
+												<a href="#">Philips Speakers</a>
+											</h4>
+											<div class="info-product-price my-2">
+												<span class="item_price">$249.00</span>
+												<del>$300.00</del>
+											</div>
 											<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
 												<form action="#" method="post">
 													<fieldset>
