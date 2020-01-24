@@ -1,5 +1,4 @@
-							
-							<footer>
+<footer>
 		<div class="footer-top-first">
 		<div class="row w3l-grids-footer border-top border-bottom py-sm-4 py-3">
 				</div>
@@ -145,7 +144,7 @@
 						</div>
 						<!-- //social icons -->
 					</div>
-		</div>
+				</div>
 				<!-- //quick links -->
 			</div>
 		</div>
