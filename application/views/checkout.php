@@ -173,5 +173,3 @@
 		</div>
 	</div>
 	<!-- //checkout page -->
-
-								
