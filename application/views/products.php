@@ -3,19 +3,7 @@
 	</div>
 	<!-- //banner-2 -->
 	<!-- page -->
-	<div class="services-breadcrumb">
-		<div class="agile_inner_breadcrumb">
-			<div class="container">
-				<ul class="w3_short">
-					<li>
-						<a href="<?php echo base_url();?>">Home</a>
-						<i>|</i>
-					</li>
-					<li>Products</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+	
 <div class="ads-grid py-sm-6 py-6">
 		<div class="container py-xl-4 py-lg-2">
 			<!-- tittle heading -->
