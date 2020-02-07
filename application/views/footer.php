@@ -100,22 +100,7 @@
 					</div>
 					<div class="col-md-3 col-sm-6 footer-grids mt-md-0 mt-4">
 						<h3 class="text-white font-weight-bold mb-3">Get in Touch</h3>
-						<ul>
-							<li class="mb-3">
-								<i class="fas fa-map-marker"></i> Brisbane, Australia.</li>
-							<li class="mb-3">
-								<i class="fas fa-mobile"></i> 333 222 3333 </li>
-							<li class="mb-3">
-								<i class="fas fa-phone"></i> +222 11 4444 </li>
-							<li class="mb-3">
-								<i class="fas fa-envelope-open"></i>
-								<a href="mailto:example@mail.com"> mail info1@starbie.com</a>
-							</li>
-							<li>
-								<i class="fas fa-envelope-open"></i>
-								<a href="mailto:example@mail.com"> mail info2@starbie.com</a>
-							</li>
-						</ul>
+						
 					</div>
 					<div class="col-md-3 col-sm-6 footer-grids w3l-agileits mt-md-0 mt-4">
 					
