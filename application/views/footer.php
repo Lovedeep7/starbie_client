@@ -14,18 +14,7 @@
 					<h5 class="font-weight-bold mb-3">Payment Method</h5>
 					<ul>
 						
-						<li>
-							<img src="<?php echo base_url();?>ci_assets/images/pay3.png" alt="">
-						</li>
-						<li>
-							<img src="<?php echo base_url();?>ci_assets/images/pay7.png" alt="">
-						</li>
-						<li>
-							<img src="<?php echo base_url();?>ci_assets/images/pay8.png" alt="">
-						</li>
-						<li>
-							<img src="<?php echo base_url();?>ci_assets/images/pay9.png" alt="">
-						</li>
+						
 					</ul>
 				</div>
 				<!-- //payment -->
