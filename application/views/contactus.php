@@ -51,17 +51,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-sm-4 contact-grid agileinfo-6 my-sm-0 my-4">
-					<div class="contact-grid1 text-center">
-						<div class="con-ic">
-							<i class="fas fa-phone rounded-circle"></i>
-						</div>
-						<h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Call Us</h4>
-						<p>+(0121) 121 121
-							<label>+(0121) 121 122</label>
-						</p>
-					</div>
-				</div>
+				
 				<div class="col-sm-4 contact-grid agileinfo-6">
 					<div class="contact-grid1 text-center">
 						<div class="con-ic">
@@ -71,7 +61,7 @@
 						<p>
 							<a href="mailto:info@starbie.com">info1@starbie.com</a>
 							<label>
-								<a href="mailto:info@starbie.com">info2@starbie.com/a>
+	hp							<a href="mailto:info@starbie.com">info2@starbie.com/a>
 							</label>
 						</p>
 					</div>
