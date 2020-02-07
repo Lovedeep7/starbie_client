@@ -13,21 +13,7 @@
 				<div class="sub-some child-momu mt-4">
 					<h5 class="font-weight-bold mb-3">Payment Method</h5>
 					<ul>
-						<li>
-							<img src="<?php echo base_url();?>ci_assets/images/pay2.png" alt="">
-						</li>
-						<li>
-							<img src="<?php echo base_url();?>ci_assets/images/pay5.png" alt="">
-						</li>
-						<li>
-							<img src="<?php echo base_url();?>ci_assets/images/pay1.png" alt="">
-						</li>
-						<li>
-							<img src="<?php echo base_url();?>ci_assets/images/pay4.png" alt="">
-						</li>
-						<li>
-							<img src="<?php echo base_url();?>ci_assets/images/pay6.png" alt="">
-						</li>
+						
 						<li>
 							<img src="<?php echo base_url();?>ci_assets/images/pay3.png" alt="">
 						</li>
