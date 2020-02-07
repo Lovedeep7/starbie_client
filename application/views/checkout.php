@@ -146,9 +146,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="controls form-group">
-										<input type="text" class="form-control" placeholder="Town/City" name="city" required="">
-									</div>
+									
 									<div class="controls form-group">
 										<select class="option-w3ls">
 											<option>Select Address type</option>
