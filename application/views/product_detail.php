@@ -32,10 +32,7 @@
 									<div class="thumb-image">
 										<img src="<?php echo base_url();?>ci_assets/images/si1.jpg" data-imagezoom="true" class="img-fluid" alt=""> </div>
 								</li>
-								<li data-thumb="<?php echo base_url();?>ci_assets/images/si2.jpg">
-									<div class="thumb-image">
-										<img src="<?php echo base_url();?>ci_assets/images/si2.jpg" data-imagezoom="true" class="img-fluid" alt=""> </div>
-								</li>
+								
 								<li data-thumb="<?php echo base_url();?>ci_assets/images/si3.jpg">
 									<div class="thumb-image">
 										<img src="<?php echo base_url();?>ci_assets/images/si3.jpg" data-imagezoom="true" class="img-fluid" alt=""> </div>
